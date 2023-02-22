@@ -12,8 +12,11 @@ def setWindowSize(width, height):
 def setTitle(title):
     root.title(title)
 
+width = config["width"]
+height = config["height"]
+
 setTitle(config["title"])
-setWindowSize(config["width"], config["height"])
+setWindowSize(width, height)
 
 thread = None
 running = False
